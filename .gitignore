@@ -1,0 +1,62 @@
+# ── Python / Django ──────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+venv/
+env/
+.venv/
+*.env
+.env
+.env.*
+!.env.example        ← este SÍ sube, es la plantilla sin valores reales
+
+# Django específico
+*.sqlite3
+media/
+staticfiles/
+local_settings.py
+
+# PyMC / ArviZ / modelos
+*.nc
+*.pkl
+*.joblib
+/backend/modelo_output/
+
+# ── Node / React ─────────────────────────────
+node_modules/
+dist/
+build/
+.cache/
+.parcel-cache/
+*.local
+
+# ── Conda ────────────────────────────────────
+/envs/
+conda-lock.yml       ← opcional, lo discutimos
+
+# ── Claude Code ──────────────────────────────
+.claude/
+
+# ── IDEs ─────────────────────────────────────
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ── Seguridad ─────────────────────────────────
+*.pem
+*.key
+*.p12
+secrets.json
+
+# ── Otros ─────────────────────────────────────
+backend/data/
